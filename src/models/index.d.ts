@@ -11,6 +11,8 @@ type NoteMetaData = {
 export declare class Note {
   readonly id: string;
   readonly text: string;
+  readonly sentiment?: string | null;
+  readonly spanish?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   constructor(init: ModelInit<Note, NoteMetaData>);
